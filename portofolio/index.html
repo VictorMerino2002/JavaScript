@@ -14,25 +14,26 @@
     <button id="calc-task" class="btn taskbar-btn"><img src="img/calculator.png" alt="Calculator">Calculator</button>
     <div class="time"><img src="img/soundIco.png" alt="Windows Sound Icon"><a id="actual-time"></a></div>
   </div>
-  
-  <button id="my-computer-desktop" class="desktop-icon" style="top: 50px; left: 50px;">
-    <img src="img/myComputer.png" alt="My Computer" width="64" height="64">
-    <div>My Computer</div>
-  </button>
-  
-  <button class="desktop-icon" style="top: 200px; left: 50px;">
-    <img src="img/recicleBin.png" alt="Recycle Bin" width="64" height="64">
-    <div>Recycle Bin</div>
-  </button>
-  
-  <button class="desktop-icon" style="top: 350px; left: 50px;">
-    <img src="img/explorer.png" alt="Internet Explorer" width="64" height="64">
-    <div>Internet Explorer</div>
-  </button>
-  <button id="calculator-desktop" class="desktop-icon" style="top: 500px; left: 50px;">
-    <img src="img/calculator.png" alt="Calculator" width="64" height="64">
-    <div>Internet Explorer</div>
-  </button>
+  <div class="desktop">
+    <button id="my-computer-desktop" class="desktop-icon">
+      <img src="img/myComputer.png" alt="My Computer">
+      <div>My Computer</div>
+    </button>
+    
+    <button class="desktop-icon" >
+      <img src="img/recicleBin.png" alt="Recycle Bin">
+      <div>Recycle Bin</div>
+    </button>
+    
+    <button class="desktop-icon">
+      <img src="img/explorer.png" alt="Internet Explorer">
+      <div>Internet Explorer</div>
+    </button>
+    <button id="calculator-desktop" class="desktop-icon">
+      <img src="img/calculator.png" alt="Calculator">
+      <div>Internet Explorer</div>
+    </button>
+  </div>
   <!-- My Computer Window -->
   <div class="window" id="myComputer">
     <nav>
@@ -61,7 +62,6 @@
         </div>
     </nav>
   </div>
-  <script src="openWindow.js"></script>
-  <script src="calculator.js"></script>
+  <script src="script/openWindow.js"></script>
 </body>
 </html>
