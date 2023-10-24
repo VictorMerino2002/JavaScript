@@ -1,0 +1,1 @@
+const Calculadora = new Ventana("PC de Víctor",500,800,"img/myComputer.png","");
