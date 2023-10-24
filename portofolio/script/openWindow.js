@@ -10,12 +10,13 @@ class Ventana {
         const desktopIcon = document.createElement("button");
         desktopIcon.setAttribute("id",`desktop-icon-${this.random}`);
         desktopIcon.className = "desktop-icon";
-        desktopIcon.innerHTML = `<img src="${this.windowIcon}" alt="${this.random}"><div>${this.name}</div>`
+        desktopIcon.innerHTML = `<img src="${this.windowIcon}" alt="${this.random}"><div>${this.name}</div>`;
 
         const desktop = document.getElementById("desktop");
         desktop.appendChild(desktopIcon);
         //Crear ventana
         const windowElement = document.createElement("div");
+        windowElement.setAttribute("id",this.name);
         windowElement.setAttribute("class","window");
         //Definir dimensiones a la ventana
         windowElement.style.width = `${windowWidth}px`;
@@ -43,7 +44,8 @@ class Ventana {
         taskElement.innerHTML = `<img src="${this.windowIcon}" alt="${name}">${name}`
         const taskbar = document.getElementById("taskbar");
         taskbar.appendChild(taskElement);
-        //Añadir funionalidad a los botones de la ventana
+
+//-------Añadir funionalidad a los botones de la ventana--------------------------------------------------------------------------------
         //Boton de minimizar ventana
         const btnMinimize = document.getElementById(`minimize-${this.random}`);
         btnMinimize.addEventListener("click",()=>{
@@ -80,6 +82,6 @@ class Ventana {
         //Añadir funcionalidad al boton de la barra de tareas
         taskElement.addEventListener("click",()=>{
             windowElement.style.display = (windowElement.style.display == "flex")?"none" :"flex";
-        })
+        });
     }
 }
