@@ -1,0 +1,160 @@
+:root{
+    --gray-color: #c0c0c0;
+    overflow: hidden;
+}
+
+*{
+    font-family: 'Levi Windows', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'Levi Windows';
+    src: url('fonts/levi-windows.ttf') format('truetype');
+  }
+  
+body {
+    background-color: #008080;
+}
+
+#taskbar {
+    display: flex;
+    align-items: center;
+    background-color: var(--gray-color);
+    border: 5px solid#d6d2d2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    color: #ffffff;
+}
+
+.taskbar-btn {
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    height: 100%;
+    width: 200px;
+    color: #000000;
+    background-color: inherit;
+}
+
+.desktop-icon {
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    border: none;
+    position: absolute;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.desktop-icon:active{
+    filter: invert(100%);
+}
+
+.taskbar-btn img{
+    height: 80%;
+}
+
+#windows-button{
+    display: flex;
+    font-weight: bold;
+    height: 100%;
+    width: 90px;
+
+}
+
+.btn{
+    border: none;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #3f3f3f;
+    border-right: 2px solid #3f3f3f;
+}
+
+.btn:active{
+    border-top: 2px solid #3f3f3f;
+    border-left: 2px solid #3f3f3f;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+
+.time{
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    position:absolute;
+    bottom:0px;
+    right: 10px;
+    margin: 2px;
+    width: 80px;
+    height: 80%;
+    border: 2px solid #989898;
+    font-weight: 600;
+}
+
+.time img{
+    height: 80%;
+}
+
+.window{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    position: absolute;
+    top: 7%;
+    left: 25%;
+    height: 800px;
+    width: 1300px;
+    padding: 5px 15px 5px 5px;
+    background-color: var(--gray-color);
+    border-top: 4px solid#ffffff;
+    border-left: 4px solid#ffffff;
+    border-bottom: 4px solid#3f3f3f;
+    border-right: 4px solid#3f3f3f;
+}
+
+.window nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4%;
+    width: 100%;
+    background-color: #0001a8;
+    padding: 5px;
+}
+
+.window-title{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 200px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    gap: 20px;
+}
+
+.window-title img{
+    height: 80%;
+}
+
+.window-btn{
+    background-color: var(--gray-color);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+}
+
+#calc-container{
+    display: none;
+    width: 500px;
+}

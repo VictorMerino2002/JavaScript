@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Victor's PC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="time.js" defer></script>
+  <div id="taskbar">
+    <button id="windows-button" class="btn taskbar-btn"><img src="img/windowsLogo.png" alt="Windows Logo">Start</button>
+    <button id="my-computer" class="btn taskbar-btn"><img src="img/myComputer.png" alt="My Computer Icon">My Computer</button>
+    <button class="btn taskbar-btn"><img src="img/recicleBin.png" alt="Recycle Bin Icon">Recycle Bin</button>
+    <button class="btn taskbar-btn"><img src="img/explorer.png" alt="Internet Explorer Icon">Internet Explorer</button>
+    <button id="calc-task" class="btn taskbar-btn"><img src="img/calculator.png" alt="Calculator">Calculator</button>
+    <div class="time"><img src="img/soundIco.png" alt="Windows Sound Icon"><a id="actual-time"></a></div>
+  </div>
+  
+  <button id="my-computer-desktop" class="desktop-icon" style="top: 50px; left: 50px;">
+    <img src="img/myComputer.png" alt="My Computer" width="64" height="64">
+    <div>My Computer</div>
+  </button>
+  
+  <button class="desktop-icon" style="top: 200px; left: 50px;">
+    <img src="img/recicleBin.png" alt="Recycle Bin" width="64" height="64">
+    <div>Recycle Bin</div>
+  </button>
+  
+  <button class="desktop-icon" style="top: 350px; left: 50px;">
+    <img src="img/explorer.png" alt="Internet Explorer" width="64" height="64">
+    <div>Internet Explorer</div>
+  </button>
+  <button id="calculator-desktop" class="desktop-icon" style="top: 500px; left: 50px;">
+    <img src="img/calculator.png" alt="Calculator" width="64" height="64">
+    <div>Internet Explorer</div>
+  </button>
+  <!-- My Computer Window -->
+  <div class="window" id="myComputer">
+    <nav>
+        <div class="window-title">
+            <img src="img/myComputer.png" alt="">
+            My Computer
+        </div>
+        <div>
+            <button class="window-btn btn" id="minimize" style="background-image:url(img/window-btn/minimize.png);"></button>
+            <button class="window-btn btn" id="maximize" style="background-image:url(img/window-btn/maximize.png);"></button>
+            <button class="window-btn btn" id="close" style="background-image:url(img/window-btn/close.png);"></button>
+        </div>
+    </nav>
+  </div>
+  <!-- Calculator Window -->
+  <div class="window" id="calc-container">
+    <nav>
+        <div class="window-title">
+            <img src="img/calculator.png" alt="">
+            My Computer
+        </div>
+        <div>
+            <button class="window-btn btn" id="minimize" style="background-image:url(img/window-btn/minimize.png);"></button>
+            <button class="window-btn btn" id="maximize" style="background-image:url(img/window-btn/maximize.png);"></button>
+            <button class="window-btn btn" id="close" style="background-image:url(img/window-btn/close.png);"></button>
+        </div>
+    </nav>
+  </div>
+  <script src="openWindow.js"></script>
+  <script src="calculator.js"></script>
+</body>
+</html>
