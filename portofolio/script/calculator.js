@@ -33,7 +33,7 @@ const calculatorContent = `
     <div class="btn funct">=</div>
 </div>
 `;
-const calculadora = new Ventana("Calculadora",500,800,"img/calculator.png",calculatorContent);
+const calculadora = new Ventana("Calculadora",400,600,"img/calculator.png",calculatorContent);
 
 const calcNumbers = document.getElementsByClassName("number");
 
