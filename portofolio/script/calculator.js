@@ -41,9 +41,8 @@ const calcScreen = document.getElementById("calc-screen");
 
 //Añadir valor a los botones de los numeros
 for(let i=0;i<calcNumbers.length;i++){
-    console.log(calcNumbers[i].innerHTML);
     calcNumbers[i].addEventListener("click",()=>{
-        if(calcScreen.innerHTML=="0"){
+        if(calcScreen.innerHTML=="0" && calcNumbers[i].innerHTML !="."){
             calcScreen.innerHTML = calcNumbers[i].innerHTML;
         }else{
             calcScreen.innerHTML = calcScreen.innerHTML + calcNumbers[i].innerHTML;
