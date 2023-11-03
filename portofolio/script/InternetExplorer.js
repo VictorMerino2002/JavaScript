@@ -19,7 +19,7 @@ const internetContent = `
         <p>El propietario de los cachorros, visiblemente emocionado y agradecido, expresó su gratitud hacia Victor Merino por su valentía. "Estoy eternamente agradecido con este héroe anónimo que salvó a mis preciosos cachorros. No hay palabras para expresar mi gratitud", dijo el propietario, mientras abrazaba a sus mascotas rescatadas.</p>
 
         <p>El acto heroico de Victor Merino no solo salvó las vidas de cinco cachorros, sino que también sirvió como un recordatorio conmovedor de la importancia de la valentía y la empatía en situaciones de crisis. Su valiente acción ha inspirado a la comunidad y ha dejado una huella imborrable en los corazones de todos los que fueron testigos de su increíble hazaña.</p>
-        <img src="img/noticias/bombero.jpg">
+        <!--<img src="img/noticias/bombero.jpg"-->
     </div>
     <br>
     <div class="new-with-img">
@@ -55,4 +55,4 @@ const internetContent = `
 </div>
 `;
 
-const internetExplorer = new Ventana("Internet Explorer",1400,800,"img/explorer.png",internetContent);
+const internetExplorer = new Ventana("Internet Explorer",1000,800,"img/explorer.png",internetContent);
