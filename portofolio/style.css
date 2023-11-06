@@ -273,3 +273,10 @@ body {
     color: #fff;
     padding: 20px;
 }
+
+.anuncio{
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    width: 20%;
+}
