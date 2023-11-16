@@ -5,9 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f865c48659.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <main>
+        <!-- Ejercicios -->
+        <section class="operation-container" id="operation-container">
+        </section>
+        <!-- Controles -->
+        <section class="control-panel">
+            <button id="btn-darkmode">🌒</button>
+            <div style="width: 100%;">
+                <h1 class="h1-control-panel">Fails:</h1>
+                <span class="stats" id="fails"></span>
+
+                <h1 class="h1-control-panel">Correct:</h1>
+                <span class="stats" id="correct"></span>
+
+                <h1 class="h1-control-panel">Timer:</h1>
+                <div id="timer-container">
+                    <span class="stats" id="timer-span">00:00</span>
+                    <button class="btn-timer" id="btn-timer-start"><i class="fa-solid fa-play"></i></button>
+                    <button class="btn-timer" id="btn-timer-stop"><i class="fa-sharp fa-solid fa-circle-stop"></i></button>
+                    <button class="btn-timer" id="btn-timer-reset"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                </div>
+                <div class="create-op">
+                    <h1 class="h1-control-panel">Create Operations:</h1>
+                    <div class="checkbox-op-container">
+                        <span class="checkbox-op"><input type="checkbox" name="" id="sum-checkbox" checked>Sumas</span>
+                        <span class="checkbox-op"><input type="checkbox" name="" id="minus-checkbox" checked>Restas</span>
+                        <span class="checkbox-op"><input type="checkbox" name="" id="multiplication-checkbox" checked>Multiplicaciones</span>
+                        <span class="checkbox-op"><input type="checkbox" name="" id="division-checkbox" checked>Divisiones</span>
+                    </div>
+                    <input type="number" name="" id="input-number-op" class="stats">
+                    <input type="range" name="" id="input-range-op" min="1" max="138" class="stats">
+                    <button id="btn-create-op" class="btn">Spawn</button>
+                </div>
+            </div>
+            <button class="btn" id="btn-check-results">Check Results</button>
+        </section>
+    </main>
 </body>
 <script src="calculo.js"></script>
+<script src="darkmode.js"></script>
+<script src="controlPanel.js"></script>
 </html>

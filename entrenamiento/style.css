@@ -1,0 +1,175 @@
+:root{
+    --background-color1: #fff;
+    --background-color2: #111;
+    --text-color1: #000;
+    --text-color2: #fff;
+    --primary-color : rgb(76, 0, 255);
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background: var(--background-color1);
+    overflow: hidden;
+}
+
+.darkmode{
+    background: var(--background-color2);
+    color: var(--text-color2);
+}
+
+.darkmode .input-result{
+    background: #222;
+    color: var(--text-color2);
+}
+
+.darkmode .stats{
+    color: var(--text-color2);
+    background: #222;
+}
+
+main{
+    display: flex;
+    gap: 10px;
+}
+
+.operation-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 89vh;
+    width: 80%;
+    padding: 40px;
+    border: 2px solid #aaa;
+    border-radius: 20px;
+    gap:10px;
+}
+
+.operation{
+    display: flex;
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+.op-content{
+    display: flex;
+    width: 70%;
+    padding-left: 10px;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+
+.input-result{
+    width: 20%;
+    outline: none;
+    background: #eee;
+    border: none;
+    border-bottom: 2px dashed var(--primary-color);
+    caret-color: var(--primary-color);
+    caret-shape: block;
+}
+
+.control-panel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    border: 2px solid #aaa;
+    border-radius: 20px;
+    width: 20%;
+    padding: 20px;
+}
+
+
+.h1-control-panel{
+    width: 80%;
+}
+
+.stats{
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    color: var(--text-color1);
+    background: #fff;
+}
+
+.create-op{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.checkbox-op-container{
+    margin: 10px 0;
+}
+
+.checkbox-op{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    gap: 5px;
+}
+
+.checkbox-op input[type="checkbox"]{
+    width: 20px;
+}
+
+#timer-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.btn-timer{
+    height: 40px;
+    width: 33%;
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--primary-color);
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.btn-timer:active{
+    border: 1px solid #000;
+}
+
+.btn{
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--text-color2);
+    background: var(--background-color2);
+    margin: 10px;
+}
+
+.darkmode .btn{
+    background: var(--primary-color);
+    color: var(--text-color2);
+}
+
+#btn-darkmode{
+    position:absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    border-radius: 20px;
+    height: 50px;
+    background: #fff;
+    border:2px solid #aaa;
+    transform: translate(-50%,50%);
+}
