@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+    height: 95%;
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background: #ccc;
+}
+
+.btn {
+    background: var(--color);
+    width: calc(50% - 20px);
+    height: calc(50% - 50px);
+    border: none;
+    margin: 10px;
+}
+
+.btn:nth-child(2) {
+    --color : #f00;
+}
+
+.btn:nth-child(3) {
+    --color : #0f0;
+}
+
+.btn:nth-child(4) {
+    --color : #00f;
+}
+
+.btn:nth-child(5) {
+    --color : #f0f;
+}
+
+#points {
+    position: absolute;
+    right: 0;
+}
