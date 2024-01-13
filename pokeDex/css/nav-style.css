@@ -34,6 +34,12 @@ nav {
     gap: 20px;
 }
 
+.search-ctrl button{
+    background: none;
+    border: none;
+    color: #fff;
+}
+
 .search-ctrl input{
     width: 350px;
     border: 3px solid #333;
