@@ -1,0 +1,22 @@
+#keyboard {
+    display: none;
+    width: 100%;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(3, 45px);
+    gap: 5px;
+    padding: 5px;
+}
+
+.key {
+    font-size: 25px;
+}
+
+#delete-btn {
+    grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+    #keyboard {
+        display: grid;
+    }
+}

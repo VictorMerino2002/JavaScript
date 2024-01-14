@@ -16,7 +16,9 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-content: space-around;
     gap: 30px;
+    height: 90vh;
 }
 
 h1 {
