@@ -93,10 +93,5 @@
     "pregunta": "¿Cuál es la velocidad máxima permitida para un ciclomotor en una vía urbana?",
     "opciones": ["30 km/h", "40 km/h", "50 km/h", "60 km/h"],
     "respuesta_correcta": 1
-  },
-  {
-    "pregunta": "¿Cuál es la tasa máxima de alcohol permitida en sangre para un conductor novele?",
-    "opciones": ["0.3 g/l", "0.5 g/l", "0.8 g/l", "1.0 g/l"],
-    "respuesta_correcta": 0
   }
 ]

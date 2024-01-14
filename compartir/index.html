@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compartir Pantalla con Audio en JS</title>
+</head>
+<body>
+  <h1>Compartir Pantalla con Audio</h1>
+  <button id="startButton">Iniciar Compartir Pantalla con Audio</button>
+
+  <script>
+    document.getElementById('startButton').addEventListener('click', async () => {
+      try {
+        const stream = await navigator.mediaDevices.getDisplayMedia({ video: true, audio: true });
+        handleSuccess(stream);
+      } catch (error) {
+        console.error('Error al acceder a la pantalla con audio:', error);
+      }
+    });
+
+    function handleSuccess(stream) {
+      const videoElement = document.createElement('video');
+      videoElement.srcObject = stream;
+      videoElement.controls = true;
+
+      document.body.appendChild(videoElement);
+    }
+  </script>
+</body>
+</html>
+

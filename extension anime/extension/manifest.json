@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "NextCap",
+  "version": "1.0",
+  "description": "Añade botón de para reproducir el último capítulo donde te quedaste en AnimeFLV",
+  "permissions": [
+    "activeTab",
+    "https://www3.animeflv.net/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www3.animeflv.net/anime/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Ejecutar Código"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
