@@ -48,7 +48,7 @@ const setQuote = async (quote, authors, points) => {
 
         const btnCorrectAnswer = document.getElementById(`btn-${id}-${correctAnswer}`)
         btnCorrectAnswer.innerText = quote.author
-        btnCorrectAnswer.style.color = "#fff"
+        //btnCorrectAnswer.style.color = "#fff"
 
         for (let i = 1; i <= 4; i++) {
             const btn = document.getElementById(`btn-${id}-${i}`)
@@ -59,7 +59,7 @@ const setQuote = async (quote, authors, points) => {
 
         allBtn.forEach(btn => {
             btn.addEventListener('click', () => {
-                if (btn.innerText == quote.author) points += 1
+                if (btn.innerText == quote.author) console.log('correcto')
                 btn.parentElement.remove()
                 updatePoints(points)
                 resolve()
