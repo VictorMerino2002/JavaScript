@@ -33,19 +33,27 @@ const displayRow = (checkWord=false) => {
 
         if (checkWord) {
             inputDiv.classList.add('animated-element')
+
+            const keyboardKey = document.querySelector(`.key[value="${userLetter.toLowerCase()}"]`)
+
+            let color = "var(--gray)"
+
             if(word === WORD_OF_THE_DAY){
                 document.removeEventListener('keydown',write)
             }
 
             if (userLetter === WORD_OF_THE_DAY_LETTER) {
-                inputDiv.style.background = "#0f0"
+                color = "var(--green)"
             }
             else if (WORD_OF_THE_DAY.includes(userLetter)) {
-                inputDiv.style.background = "#fc0"
+                color = "var(--orange)" 
             }
-            else {
-                inputDiv.style.background = "#444"
-            }
+
+            inputDiv.style.color = color
+            inputDiv.style.border = "2px solid "+ color
+
+            keyboardKey.style.color = color
+            keyboardKey.style.border = "2px solid "+ color
         }
     }
 

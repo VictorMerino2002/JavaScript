@@ -1,5 +1,9 @@
 :root {
     color-scheme: dark light;
+    --green : #019901;
+    --orange : #f90;
+    --gray : #222;
+    --primary-color : #20acd6;
 }
 
 
@@ -48,7 +52,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #000;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
     flex: 1;
     margin: 5px;
     font-size: 4em;
