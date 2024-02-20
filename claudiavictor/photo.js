@@ -1,4 +1,5 @@
 const btnRandomPhoto = document.getElementById("btn-photo")
+const btnNextPhoto = document.getElementById("btn-next-photo")
 const photoContainer = document.getElementById("photo-container")
 const photo = document.getElementById("photo")
 const piropoH2 = document.getElementById("piropo")
@@ -38,7 +39,7 @@ const piropos = [
 'Eres el poema que mi corazón siempre quiso escribir',
 'Tus risas son la banda sonora de mis días']
 
-btnRandomPhoto.addEventListener("click", () => {
+function displayPhoto() {
     let lastPhoto = -1
     let lastPiropo = -1
     photoContainer.style.display = "flex"
@@ -50,7 +51,10 @@ btnRandomPhoto.addEventListener("click", () => {
     piropoH2.innerText = piropos[randomPiropoNum]
     lastPiropo = randomPiropoNum
     lastPhoto = randomPhotoNum
-})
+}
+
+btnRandomPhoto.addEventListener("click", () => displayPhoto())
+btnNextPhoto.addEventListener("click", () => displayPhoto())
 
 const btnClosePhoto = document.getElementById("btn-close-photo")
 
