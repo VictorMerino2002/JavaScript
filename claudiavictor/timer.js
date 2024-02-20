@@ -43,7 +43,7 @@ class Timer {
     }
 }
 
-let fechaNovios = new Date('2023-02-17T12:00:00')
+let fechaNovios = new Date('2023-02-17T20:00:00')
 const timer = new Timer(fechaNovios, "timer")
 
 timer.displayDiferencia()
